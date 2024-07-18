@@ -1,0 +1,8 @@
+#categories-container a:hover {
+    background-color: #EEEFFF;
+    color: #5D5FEF;
+    border-radius: 5px;
+}
+#categories-container a{
+    padding: 5px 10px;
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>            
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My News</title>
+
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/newspaper.png" type="image/x-icon">
+
+    <!-- daisy ui  and tailwindcss link -->
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Style sheet  -->
+<link rel="stylesheet" href="./css/style.css">
+
+
+
+<style>/* ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle;}img,video{max-width:100%;height:auto}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.right-2{right:0.5rem}.top-2{top:0.5rem}.bottom-0{bottom:0px}.mx-auto{margin-left:auto;margin-right:auto}.my-10{margin-top:2.5rem;margin-bottom:2.5rem}.ml-4{margin-left:1rem}.mr-4{margin-right:1rem}.mb-10{margin-bottom:2.5rem}.mb-3{margin-bottom:0.75rem}.-mt-2{margin-top:-0.5rem}.mt-7{margin-top:1.75rem}.mb-24{margin-bottom:6rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-2{height:0.5rem}.w-11\/12{width:91.666667%}.w-full{width:100%}.flex-1{flex:1 1 0%}.flex-none{flex:none}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.gap-10{gap:2.5rem}.gap-4{gap:1rem}.rounded-lg{border-radius:0.5rem}.rounded-full{border-radius:9999px}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-indigo-400{--tw-bg-opacity:1;background-color:rgb(129 140 248 / var(--tw-bg-opacity))}.p-2{padding:0.5rem}.p-0{padding:0px}.p-4{padding:1rem}.p-8{padding:2rem}.p-5{padding:1.25rem}.text-center{text-align:center}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-semibold{font-weight:600}.normal-case{text-transform:none}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-blue-500\/50{--tw-shadow-color:rgb(59 130 246 / 0.5);--tw-shadow:var(--tw-shadow-colored)}.shadow-indigo-500\/50{--tw-shadow-color:rgb(99 102 241 / 0.5);--tw-shadow:var(--tw-shadow-colored)}@media (min-width: 640px){.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:gap-4{gap:1rem}}</style><style>/* ! tailwindcss v3.4.5 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.bottom-0{bottom:0px}.right-2{right:0.5rem}.top-2{top:0.5rem}.mx-auto{margin-left:auto;margin-right:auto}.my-10{margin-top:2.5rem;margin-bottom:2.5rem}.-mt-2{margin-top:-0.5rem}.mb-10{margin-bottom:2.5rem}.mb-24{margin-bottom:6rem}.mb-3{margin-bottom:0.75rem}.ml-4{margin-left:1rem}.mr-4{margin-right:1rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-7{margin-top:1.75rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-2{height:0.5rem}.w-11\/12{width:91.666667%}.w-full{width:100%}.flex-1{flex:1 1 0%}.flex-none{flex:none}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.gap-10{gap:2.5rem}.gap-4{gap:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity))}.bg-indigo-400{--tw-bg-opacity:1;background-color:rgb(129 140 248 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.p-0{padding:0px}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-8{padding:2rem}.text-center{text-align:center}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-semibold{font-weight:600}.normal-case{text-transform:none}.text-blue-500{--tw-text-opacity:1;color:rgb(59 130 246 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-blue-500\/50{--tw-shadow-color:rgb(59 130 246 / 0.5);--tw-shadow:var(--tw-shadow-colored)}.shadow-indigo-500\/50{--tw-shadow-color:rgb(99 102 241 / 0.5);--tw-shadow:var(--tw-shadow-colored)}@media (min-width: 640px){.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:gap-4{gap:1rem}}</style></head>
+<body>
+    <!-- Header  part  -->
+    <header>
+        <!-- navbarstart  -->
+        <div class="navbar bg-base-100 flex-col sm:flex-row" id="navbar">
+            <div class="flex-1 ">
+              <a class="btn btn-ghost normal-case text-xl text-blue-500" href="/"> <span class="bg-blue-500 text-white p-2">Amar</span> <span class="ml-4">News</span></a>
+            </div>
+            <div class="flex-none mr-4">
+              <ul class="menu menu-horizontal p-0">
+                <li><a class="text-blue-500 text-xl" href="/">News</a></li>
+                <li><a class="text-blue-500 text-xl" href="/blogs">Blog</a></li>
+                <li><img src="./images/Avatar.png" alt=""></li>
+              </ul>
+            </div>
+          </div>
+          <!-- navbar end  -->
+          <hr class="mx-auto w-11/12 h-2">
+
+          <!-- Category -->
+          <section class="w-11/12 mx-auto my-10 bg-white rounded-lg p-4 text-xl shadow-lg shadow-blue-500/50  font-semibold ">
+            <div style="color: #858585;" id="categories-container" class="flex justify-center gap-10  flex-col sm:flex-row text-center sm:text- "><a>
+    
+    <div class="p-2 cursor-pointer" href="" onclick="loadCategoriesNumber('01', 'Breaking News')">Breaking News</div>
+    </a><a>
+    
+    <div class="p-2 cursor-pointer" href="" onclick="loadCategoriesNumber('02', 'Regular News')">Regular News</div>
+    </a><a>
+    
+    <div class="p-2 cursor-pointer" href="" onclick="loadCategoriesNumber('03', 'International News')">International News</div>
+    </a><a>
+    
+    <div class="p-2 cursor-pointer" href="" onclick="loadCategoriesNumber('04', 'Sports')">Sports</div>
+    </a><a>
+    
+    <div class="p-2 cursor-pointer" href="" onclick="loadCategoriesNumber('05', 'Entertainment')">Entertainment</div>
+    </a><a>
+    
+    <div class="p-2 cursor-pointer" href="" onclick="loadCategoriesNumber('06', 'Culture')">Culture</div>
+    </a><a>
+    
+    <div class="p-2 cursor-pointer" href="" onclick="loadCategoriesNumber('07', 'Arts')">Arts</div>
+    </a><a>
+    
+    <div class="p-2 cursor-pointer" href="" onclick="loadCategoriesNumber('08', 'All News')">All News</div>
+    </a></div>
+        </section>
+
+        <!-- Category item found section  -->
+        <section class="mb-10">
+          <div class="w-11/12 mx-auto  shadow-lg shadow-blue-500/50 text-xl	bg-white p-4 " id="number-of-news">
+        <p> 8 items found for  Breaking News </p>
+    </div>
+        </section>
+
+        <!-- spinner  -->
+      <div class="w-11/12 mx-auto hidden" id="spinner">
+        <progress class="progress w-full "></progress>
+      </div>
+
+    </header>
+
+    <!-- main  -->
+    <main>
+      <!-- news dispaly  -->
+        <section id="news-container"><div>
+        
+        
+        <div class="card w-11/12 mx-auto lg:card-side bg-base-100 p-5 shadow-xl mt-7 mb-24">
+        <figure><img src="https://i.ibb.co/HXC719r/unsplash-Eh-Tc-C9s-YXsw-19.png" alt="Album"></figure>
+        <div class="card-body">
+          <h2 class="card-title">Joe Biden announces $3 billion in Ukraine weapons aid</h2>
+          <p>WASHINGTON: President Joe Biden announced nearly $3 billion in military aid to Kyiv on Wednesday -- the biggest US package so far -- to mark Ukraine's independence day, six months after Russia invaded</p>
+        <p>the country. The package aims to fortify Ukraine's military over the coming two years by committing the production and... read&nbsp;full&nbsp;story .....</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 items-center text-center mt-3">
+
+              <div class="flex  justify-center items-center gap-4  mt-4">
+                  <div class="">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&amp;w=1000&amp;q=80" style="width: 50px" class="w-100 rounded-full" alt="">
+                  </div>
+                  <div>
+                    <p>not found</p>
+                    <p>2022-08-24 23:15:00</p>
+                  </div>
+              </div>
+
+              <div class="flex gap-4 justify-center items-center mt-4">
+                <div><img src="./images/carbon_view.png" alt=""></div>
+                <div><p>980M</p></div>
+              </div>
+              <div class="flex justify-center mt-5">
+                 <div onclick="loadModal('11468ed61aee84de492a8b04158a22f0')"> <label for="my-modal-3" class=" modal-button"><img src="./images/bi_arrow-right-short.png" alt=""></label> </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+        
+        </div><div>
+        
+        
+        <div class="card w-11/12 mx-auto lg:card-side bg-base-100 p-5 shadow-xl mt-7 mb-24">
+        <figure><img src="https://i.ibb.co/HXC719r/unsplash-Eh-Tc-C9s-YXsw-19.png" alt="Album"></figure>
+        <div class="card-body">
+          <h2 class="card-title">Zelensky says he had ‘great conversation' with Biden, discussed Kiev's further steps</h2>
+          <p>KIEV, August 25. /TASS/. Ukrainian President Vladimir Zelensky said he had a   great   phone conversation with his US counterpart Joe Biden and discussed with him Ukraine's further actions on Thursday</p>
+        <p>    Had a great conversation with @POTUS. Thanked for the unwavering U.S. support for Ukrainian people - security and financial,   he wrote on Twitter.   We discussed Ukraine's further steps,   Zelen .....</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 items-center text-center mt-3">
+
+              <div class="flex  justify-center items-center gap-4  mt-4">
+                  <div class="">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&amp;w=1000&amp;q=80" style="width: 50px" class="w-100 rounded-full" alt="">
+                  </div>
+                  <div>
+                    <p>not found</p>
+                    <p>2022-08-25 18:45:00</p>
+                  </div>
+              </div>
+
+              <div class="flex gap-4 justify-center items-center mt-4">
+                <div><img src="./images/carbon_view.png" alt=""></div>
+                <div><p>798M</p></div>
+              </div>
+              <div class="flex justify-center mt-5">
+                 <div onclick="loadModal('374df11ae3d9b8b9ce21f4dc53f59b85')"> <label for="my-modal-3" class=" modal-button"><img src="./images/bi_arrow-right-short.png" alt=""></label> </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+        
+        </div><div>
+        
+        
+        <div class="card w-11/12 mx-auto lg:card-side bg-base-100 p-5 shadow-xl mt-7 mb-24">
+        <figure><img src="https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png" alt="Album"></figure>
+        <div class="card-body">
+          <h2 class="card-title">Biden Pledges Nearly $3 Billion To Ukraine In Largest U.S. Military Aid Package Yet</h2>
+          <p>Wednesday, August 24, 2022 | Tag Cloud Tags: Biden, EU, Euro, Europe, Joe Biden, Military, News, Russia, Security, UK, Ukraine, United States, Worthy News (Worthy News) – U.S. President Joe Biden has </p>
+        <p>nnounced nearly $3 billion in new U.S. military aid for Kyiv as Ukraine marked its independence day six months after Russia invaded the country.'The United States of America is committed to supportin .....</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 items-center text-center mt-3">
+
+              <div class="flex  justify-center items-center gap-4  mt-4">
+                  <div class="">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&amp;w=1000&amp;q=80" style="width: 50px" class="w-100 rounded-full" alt="">
+                  </div>
+                  <div>
+                    <p>Jimmy Dane</p>
+                    <p>2022-08-24 17:27:34</p>
+                  </div>
+              </div>
+
+              <div class="flex gap-4 justify-center items-center mt-4">
+                <div><img src="./images/carbon_view.png" alt=""></div>
+                <div><p>488M</p></div>
+              </div>
+              <div class="flex justify-center mt-5">
+                 <div onclick="loadModal('0282e0e58a5c404fbd15261f11c2ab6a')"> <label for="my-modal-3" class=" modal-button"><img src="./images/bi_arrow-right-short.png" alt=""></label> </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+        
+        </div><div>
+        
+        
+        <div class="card w-11/12 mx-auto lg:card-side bg-base-100 p-5 shadow-xl mt-7 mb-24">
+        <figure><img src="https://i.ibb.co/k8XBcMX/unsplash-Eh-Tc-C9s-YXsw-15.png" alt="Album"></figure>
+        <div class="card-body">
+          <h2 class="card-title">Tucker Carlson Swears Vladimir Putin Is Winning The War In Ukraine</h2>
+          <p>Tucker Carlson has rarely met a dictator's ass he didn't want to kiss, and Vladimir Putin is at the very top of that puckering up list. The Fox News host is something of a folk hero in Russia: Because</p>
+        <p>of the pro-Putin propaganda he so often spews, the Kremlin has encouraged Russia's state TV to air as much of Tucker's face as possible — and they're certain to love his latest rant about how Putin i .....</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 items-center text-center mt-3">
+
+              <div class="flex  justify-center items-center gap-4  mt-4">
+                  <div class="">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&amp;w=1000&amp;q=80" style="width: 50px" class="w-100 rounded-full" alt="">
+                  </div>
+                  <div>
+                    <p>Jennifer Wood</p>
+                    <p>2022-08-30 16:38:45</p>
+                  </div>
+              </div>
+
+              <div class="flex gap-4 justify-center items-center mt-4">
+                <div><img src="./images/carbon_view.png" alt=""></div>
+                <div><p>400M</p></div>
+              </div>
+              <div class="flex justify-center mt-5">
+                 <div onclick="loadModal('f69a695f037cd9484cecaea37ca71011')"> <label for="my-modal-3" class=" modal-button"><img src="./images/bi_arrow-right-short.png" alt=""></label> </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+        
+        </div><div>
+        
+        
+        <div class="card w-11/12 mx-auto lg:card-side bg-base-100 p-5 shadow-xl mt-7 mb-24">
+        <figure><img src="https://i.ibb.co/1vcgPzg/unsplash-Eh-Tc-C9s-YXsw-12.png" alt="Album"></figure>
+        <div class="card-body">
+          <h2 class="card-title">U.S. announces largest weapons package for Ukraine</h2>
+          <p>People's Daily Online (Xinhua) 08:16, August 25, 2022 The United States has committed more than 13.5 billion dollars in security assistance to Ukraine since President Joe Biden took office. WASHINGTON</p>
+        <p> Aug. 24 (Xinhua) -- The United States on Wednesday announced an additional tranche of security assistance to Ukraine worth nearly 3 billion U.S. dollars, the largest one-time weapons aid to Kiev tha .....</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 items-center text-center mt-3">
+
+              <div class="flex  justify-center items-center gap-4  mt-4">
+                  <div class="">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&amp;w=1000&amp;q=80" style="width: 50px" class="w-100 rounded-full" alt="">
+                  </div>
+                  <div>
+                    <p>John Pike</p>
+                    <p>2022-08-25 07:35:11</p>
+                  </div>
+              </div>
+
+              <div class="flex gap-4 justify-center items-center mt-4">
+                <div><img src="./images/carbon_view.png" alt=""></div>
+                <div><p>320M</p></div>
+              </div>
+              <div class="flex justify-center mt-5">
+                 <div onclick="loadModal('30af81e91ab3eafc0bcae0de62f55d5c')"> <label for="my-modal-3" class=" modal-button"><img src="./images/bi_arrow-right-short.png" alt=""></label> </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+        
+        </div><div>
+        
+        
+        <div class="card w-11/12 mx-auto lg:card-side bg-base-100 p-5 shadow-xl mt-7 mb-24">
+        <figure><img src="https://i.ibb.co/dr4TRY4/unsplash-Eh-Tc-C9s-YXsw-21.png" alt="Album"></figure>
+        <div class="card-body">
+          <h2 class="card-title">US to name military mission in Ukraine and appoint commander – WSJ</h2>
+          <p>Illustrative public photo In the coming weeks, the Joe Biden administration plans to name its military mission to support Ukraine and appoint a general to lead the military training and relief efforts</p>
+        <p> This is reported by The Wall Street Journal, citing US officials. The name of the operation formally recognizes US military support, akin to how the Pentagon dubbed the missions in Iraq and Afghanis .....</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 items-center text-center mt-3">
+
+              <div class="flex  justify-center items-center gap-4  mt-4">
+                  <div class="">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&amp;w=1000&amp;q=80" style="width: 50px" class="w-100 rounded-full" alt="">
+                  </div>
+                  <div>
+                    <p>Kumar Natasha</p>
+                    <p>2022-08-26 12:15:36</p>
+                  </div>
+              </div>
+
+              <div class="flex gap-4 justify-center items-center mt-4">
+                <div><img src="./images/carbon_view.png" alt=""></div>
+                <div><p>231M</p></div>
+              </div>
+              <div class="flex justify-center mt-5">
+                 <div onclick="loadModal('be44c843d61859cc0b87cae85c55f9db')"> <label for="my-modal-3" class=" modal-button"><img src="./images/bi_arrow-right-short.png" alt=""></label> </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+        
+        </div><div>
+        
+        
+        <div class="card w-11/12 mx-auto lg:card-side bg-base-100 p-5 shadow-xl mt-7 mb-24">
+        <figure><img src="https://i.ibb.co/HXC719r/unsplash-Eh-Tc-C9s-YXsw-19.png" alt="Album"></figure>
+        <div class="card-body">
+          <h2 class="card-title">U.S. concerned about India's participation in Russia military exercises</h2>
+          <p>Last month, Moscow announced plans to hold   Vostok   (East) exercises from Aug. 30 to Sept. 5, even as it wages a costly war in Ukraine. The military exercises are expected to include China, India, B</p>
+        <p>larus, Mongolia, Tajikistan and other countries, China's defense ministry has said. Asked about India's participation, Jean-Pierre told reporters as President Joe Biden flew to Pennsylvania that the  .....</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 items-center text-center mt-3">
+
+              <div class="flex  justify-center items-center gap-4  mt-4">
+                  <div class="">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&amp;w=1000&amp;q=80" style="width: 50px" class="w-100 rounded-full" alt="">
+                  </div>
+                  <div>
+                    <p>MarketScreener</p>
+                    <p>2022-08-30 18:05:42</p>
+                  </div>
+              </div>
+
+              <div class="flex gap-4 justify-center items-center mt-4">
+                <div><img src="./images/carbon_view.png" alt=""></div>
+                <div><p>89M</p></div>
+              </div>
+              <div class="flex justify-center mt-5">
+                 <div onclick="loadModal('919db97c34e0778b387dd40cdfa08130')"> <label for="my-modal-3" class=" modal-button"><img src="./images/bi_arrow-right-short.png" alt=""></label> </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+        
+        </div><div>
+        
+        
+        <div class="card w-11/12 mx-auto lg:card-side bg-base-100 p-5 shadow-xl mt-7 mb-24">
+        <figure><img src="https://i.ibb.co/QnwC4sG/unsplash-Eh-Tc-C9s-YXsw-11.png" alt="Album"></figure>
+        <div class="card-body">
+          <h2 class="card-title">Biden announces $3 billion Ukraine military aid package on its Independence Day</h2>
+          <p>Published: 25 Aug 2022, 09: 09 US president Joe Biden speaks as he attends the first virtual meeting of the   I2U2   group with Israeli prime minister Yair Lapid and leaders of India and the United Ar</p>
+        <p>b Emirates, in Jerusalem 14 July, 2022ReutersUS President Joe Biden marked Ukraine's Independence Day on Wednesday with $3 billion in security assistance, Washington's largest aid package since Russi .....</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 items-center text-center mt-3">
+
+              <div class="flex  justify-center items-center gap-4  mt-4">
+                  <div class="">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&amp;w=1000&amp;q=80" style="width: 50px" class="w-100 rounded-full" alt="">
+                  </div>
+                  <div>
+                    <p>Reuters</p>
+                    <p>2022-08-25 03:09:16</p>
+                  </div>
+              </div>
+
+              <div class="flex gap-4 justify-center items-center mt-4">
+                <div><img src="./images/carbon_view.png" alt=""></div>
+                <div><p>Views Not Found</p></div>
+              </div>
+              <div class="flex justify-center mt-5">
+                 <div onclick="loadModal('7c4dfea0fafddc813673282a428429b7')"> <label for="my-modal-3" class=" modal-button"><img src="./images/bi_arrow-right-short.png" alt=""></label> </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+        
+        </div></section>
+
+    </main>
+    <!-- ---- Modal ----  -->
+    <input type="checkbox" id="my-modal-3" class="modal-toggle">
+<div class="modal">
+  <div class="modal-box relative">
+    <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    <div id="news-detail">
+      
+    </div>
+  </div>
+</div>
+
+<footer class="bg-indigo-400 shadow-lg shadow-indigo-500/50 fixed bottom-0 w-full mb-3 -mt-2 mx-auto p-8">
+  <section class="text-center text-white"><h3> © Copyrights 2022 My News </h3></section>
+</footer>
+    <!-- script file  -->
+    <script src="./js/app.js"></script>
+
+</body></html>
